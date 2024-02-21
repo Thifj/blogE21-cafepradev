@@ -11,7 +11,8 @@ class HomeController extends Controller
     public function index()
     {
         return view("blog/home", [
-            "articles" => Articles::inRandomOrder()->limit(3)->get()
+            // orderBy ASC = CRESCENTE (ASCENT) e DESC = DECRECENTE (DESCENT)
+            "articles" => Articles::orderBy("id", "DESC")->limit(3)->get()
         ]);
     }
 }

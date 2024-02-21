@@ -11,3 +11,14 @@ main{
   position: relative;
   bottom: 0;
 }
+.card{
+    .card-action{
+      padding: 0 20px 10px 20px; // t = TOP, r = RIGHT, b = BOTTOM, l = LEFT
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-body{
+      min-height: 150px;
+    }
+
+}
